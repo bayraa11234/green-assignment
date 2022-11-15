@@ -7,6 +7,7 @@
     border: 1px solid black;
     border-radius: 50px;
     background-color: #ccc;
+    transition-duration: 1s;
 }
 .shape{
     position: absolute;
@@ -14,6 +15,7 @@
     height: 25px;
     border-radius: 50px;
     background-color: white;
+    transition-duration: 1s;
 }
 .box:active{
     background-color: rgb(69, 69, 151);

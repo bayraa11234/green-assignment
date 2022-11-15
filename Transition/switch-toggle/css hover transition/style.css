@@ -4,11 +4,12 @@
     height: 50px;
     width: 80px;
     border-radius: 50px;
-    background-color: blue;
+    background-color: rgba(0, 0, 255, 0.5);;
     transition-duration: 1s;
 }
 .btn-box:active{
     width: 80vw;
+    background-color: blue;
 }
 .hvr-box{
     height: 50px;
@@ -19,4 +20,5 @@
 }
 .hvr-box:hover{
     width: 80vw;
+    background-color: rgba(0, 255, 0, 0.5);
 }

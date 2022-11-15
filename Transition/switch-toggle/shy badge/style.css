@@ -1,0 +1,35 @@
+body{
+    margin: 50px;
+}
+.hover-btn{
+    background-color: #ccc;
+    color: red;
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    transition-duration: 0.8s;
+}
+.num{
+    background-color: red;
+    color: #fff;
+    width: 20px;
+    border-radius: 50%;
+    margin-left: 190px;
+    margin-top: -28px;
+    transition-duration: 1s;
+}
+.hover-btn:hover{
+    background-color: red;
+    color: #fff;
+    border-radius: 10px;
+    z-index: 3;
+}
+.hover-btn:hover .num{
+    position: relative;
+    z-index: -1;
+    border: 1px solid black;
+    background-color: #fff;
+    color: red;
+    margin-left: 100px;
+    margin-top: -10px;
+}

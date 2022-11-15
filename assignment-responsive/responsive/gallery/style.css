@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+}
+.mountain>img{
+    position: relative;
+    height: 50vh;
+    width: 100vw;
+}
+h2{
+    font-size: 48px;
+    position: absolute;
+    color: aqua;
+    z-index: 2;
+    padding: 50px 0 0 100px;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+/*.row>*{
+    width: 24%;
+}*/
+.photo{
+   border: 5px solid #fff;
+   width: 25%;
+}
+.photo>img{
+    width: 100%;
+}
+@media only screen and (max-width:1200px){
+    .photo{
+        width: 33%;
+    }
+}
+

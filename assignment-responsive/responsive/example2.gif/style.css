@@ -1,4 +1,8 @@
 
+
+main{
+    margin-bottom: 100px;
+}
 section{
     display: flex;
     gap: 20px;
@@ -9,10 +13,35 @@ article{
 }
 img{
     width: 100%;
-    height: 20vh;
+    height: 200px;
     border-radius: 10px;
+    background-position: center;
+    background-size: cover;
 }
-@media only screen and (max-width:738px){
+
+aside{
+    margin-top: 40px;
+    display: flex;
+    gap: 40px;
+}
+.lorem{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+.lorem-img>img{
+    max-width: 500px;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.aside-text{
+    background-color: rgba(0, 0, 255,0.2);
+    max-width: 30vw;
+    padding: 20px;
+    border-radius: 20px;
+}
+@media only screen and (max-width:768px){
     section{
         display: block;
     }
@@ -23,17 +52,27 @@ img{
     }
     img{
         max-width: 100%;
-
+    }
+    aside{
+        display: block;
+    }
+    .lorem-title{
+        font-size: 12px;
+    }
+    .lorem-paragraph{
+        font-size: 12px;
+    }
+    .aside-text{
+        max-width: 100vw;
+        margin-top: 40px;
+        font-size: 12px;
     }
 }
 @media only screen and (max-width:340px){
-    section{
-        display: block;
-    }
     article{
         display: flex;
         flex-wrap: wrap;
-        flex-direction: column;
+        flex-direction: row;
     }
     img{
         width: 100%;
