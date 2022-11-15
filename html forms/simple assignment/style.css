@@ -1,0 +1,24 @@
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+section{
+    height: 50%;
+    width: 50%;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 100px;
+}
+.submit{
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    transition-duration: 0.5s;
+}
+.submit:hover{
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 40px;
+}
