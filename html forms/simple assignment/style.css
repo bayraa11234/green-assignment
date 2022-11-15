@@ -12,6 +12,7 @@ section{
     padding: 100px;
 }
 .submit{
+    margin-left: 70px;
     background-color: black;
     color: white;
     border-radius: 10px;
