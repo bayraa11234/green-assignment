@@ -1,0 +1,40 @@
+
+
+body{
+    background-color: gray;
+
+}
+article{
+    background-color: #fff;
+    display: flex;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.photo>img{
+    width: 35vw;
+    height: 100%;
+}
+.card-text{
+    padding: 0 30px;
+}
+.between{
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+.card-btn{
+
+}
+@media only screen and (max-width:640px){
+    article{
+        display: block;
+    }
+    .photo>img{
+        width: 100vw;
+        max-height: 40vh;
+    }
+    .card2{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
