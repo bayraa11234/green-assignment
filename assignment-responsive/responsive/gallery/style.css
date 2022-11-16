@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    padding: 0;
 }
 .mountain>img{
     position: relative;
@@ -16,21 +17,25 @@ h2{
 .row{
     display: flex;
     flex-wrap: wrap;
-    width: 100vw;
 }
-/*.row>*{
-    width: 24%;
-}*/
-.photo{
-   border: 5px solid #fff;
-   width: 25%;
-}
-.photo>img{
-    width: 100%;
+.photo>*{
+    padding: 0 10px;
+    width: 23vw;
+    height: 35vh;
 }
 @media only screen and (max-width:1200px){
-    .photo{
-        width: 33%;
+    .photo>*{
+        width: 30vw;
+       
     }
 }
-
+@media only screen and (max-width:992px){
+    .photo>*{
+        width: 47vw;
+    }
+}
+@media only screen and (max-width:768px){
+    .photo>*{
+        width: 100vw;
+    }
+}
