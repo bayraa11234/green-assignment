@@ -40,9 +40,11 @@ section:hover .blue-box{
     border-radius: 50%;
     margin-top: 200px;
     margin-left: 200px;
-    transition-duration: 2s;
+   transition-property: margin-left, margin-top;
+   transition-duration: 3s,1s;
 }
 section:hover .green-box{
+    margin-left: 420px;
     margin-top: 420px;
 }
 .red-box{
@@ -56,12 +58,13 @@ section:hover .green-box{
     border-radius: 50%;
     margin-top: 200px;
     margin-left: 200px;
-    transition-duration: 2s;
+    transition-property: margin-top, margin-left;
+    transition-duration: 1s,2s;
+    transition-timing-function: ease, ease-in-out;
 }
 section:hover .red-box{
     margin-left: 420px;
     margin-top: 0;
     background-color: yellow;
     border-radius: 0;
-
 }
