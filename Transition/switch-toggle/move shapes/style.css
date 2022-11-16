@@ -65,6 +65,6 @@ section:hover .green-box{
 section:hover .red-box{
     margin-left: 420px;
     margin-top: 0;
-    background-color: yellow;
+    background-color: orange;
     border-radius: 0;
 }
