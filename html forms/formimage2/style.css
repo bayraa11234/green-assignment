@@ -1,0 +1,9 @@
+
+section{
+    width: 500px;
+    margin: 0 auto;
+    border: 3px dashed red;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(160, 202, 238,0.3);
+}
