@@ -23,11 +23,7 @@ article{
     padding-bottom: 30px;
 }
 .card-btn{
-<<<<<<< HEAD
     text-align: right;
-=======
-    text-align:right;
->>>>>>> bc3b75de242bb4d09e96df5fc0284bfa0170bf01
 }
 @media only screen and (max-width:640px){
     article{
