@@ -1,3 +1,6 @@
+*{
+    font-family: sans-serif;
+}
 body{
     background-color:  rgba(137, 176, 223);
     width: 100%;
