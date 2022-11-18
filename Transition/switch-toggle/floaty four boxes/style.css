@@ -1,10 +1,4 @@
 
-main{
-    display: flex;
-    justify-content:center ;
-    align-items: center;
-    height: 100vh;
-}
 section{
     border: 1px solid black;
     padding: 200px 200px;
@@ -12,6 +6,9 @@ section{
 }
 div{
     display: inline-block;
+}
+.container{
+    position: relative;
 }
 .box{
     position: relative;
@@ -21,51 +18,62 @@ div{
     -webkit-box-shadow: -1px 3px 70px 7px rgba(0,0,0,0.64);
     -moz-box-shadow: -1px 3px 70px 7px rgba(0,0,0,0.64);
 }
-.left-top{
+.container-ab{
+    position: absolute;
+}
+.slot{
     position: absolute;
     width: 100px;
     height: 100px;
     background-color: pink;
-    margin-left: -204px;
+}
+.slot1{
+    left: -230px;
     transition-duration: 1s;
 }
-.right-top{
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: pink;
-    margin-left: -100px;
+.slot2{
+    left: -126px;
     transition-duration: 1s;
 }
-.left-bottom{
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: pink;
-    margin-left: -100px;
+.slot3{
+    left: -230px;
+    top: 105px;
     transition-duration: 1s;
 }
-.right-bottom{
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    background-color: pink;
-    margin-left: -204px;
+.slot4{
+    left: -126px;
+    top: 105px;
     transition-duration: 1s;
 }
-section:hover .left-top{
-    bottom: 664px;
-    margin-left: -403px;
+section:hover .slot1{
+    margin-top: -200px;
+    margin-left: -200px;
 }
-section:hover .right-top{
-    bottom: 664px;
-    margin-left: 125px;
+section:hover .slot2{
+    margin-top: -200px;
+    margin-left: 226px;
 }
-section:hover .right-bottom{
-    margin-left: -403px;
-    bottom: 157px;
+section:hover .slot3{
+    margin-left: -200px;
+    margin-top: 203px;
 }
-section:hover .left-bottom{
-    margin-left: 125px;
-    bottom: 157px;
+section:hover .slot4{
+    margin-left: 226px;
+    margin-top: 203px;
+}
+/*section:hover .slot1{
+    left: -430px;
+    top: -200px;
+}
+section:hover .slot2{
+    left: 100px;
+    top: -200px;
+}
+section:hover .slot3{
+    left: -430px;
+    top: 310px;
+}
+section:hover .slot4{
+    left: 100px;
+    top: 310px;
 }

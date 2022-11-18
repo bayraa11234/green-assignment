@@ -1,0 +1,54 @@
+
+*{
+    box-sizing: border-box;
+}
+
+#mySidenav div {
+  position: absolute;
+  left: -260px;
+  transition: 0.5s;
+  width: 300px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  opacity: 0.5;
+}
+.about>a:hover{
+    background-color: #fff;
+    font-size: 50px;
+    color: #04AA6D;
+}
+
+#mySidenav div:hover {
+  left: 0;
+  opacity: 1;
+}
+
+.about {
+  top: 20px;
+  background-color: rgba(38, 34, 34, 0.603);
+  padding: 20px 0;
+  width: 300px;
+  border-radius: 10px
+}
+.about>a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 48px;
+    background-color: #04AA6D;
+    width: 300px;
+    margin: 20px 0;
+    text-align: center;
+    transition-duration: 0.5s;
+}
+p{
+    margin: 0;
+    padding: 0 15px;
+    text-align: right;
+}
+p:hover{
+    color: red;
+    cursor: pointer;
+}
