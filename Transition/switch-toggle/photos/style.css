@@ -1,0 +1,233 @@
+main{
+    display: flex;
+    padding: 0;
+    width: 500px;
+    flex-wrap: wrap;
+    border: 25px solid green;
+}
+.photo>img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    overflow: hidden;
+}
+.photo1{
+    position: relative;
+    width: 150px;
+}
+.photo1>img{
+    display: block;
+    width: 150px;
+    height: 150px;
+}
+.overlay1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0, 0.4);
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    transition: .5s ease;
+}
+.photo1:hover .overlay1 {
+    width: 0;
+    height:0;
+    bottom:150px;
+}
+.photo2{
+    position: relative;
+    width: 150px;
+}
+.photo2>img{
+    display: block;
+    width: 150px;
+    height: 150px;
+}
+.overlay2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0, 0.4);
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    transition: .5s ease;
+}
+.photo2:hover .overlay2 {
+    bottom: 150px;
+    height: 0;
+}
+.photo3{
+    position: relative;
+    width: 150px;
+}
+.photo3>img{
+    display: block;
+    width: 150px;
+    height: 150px;
+}
+.overlay3 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0, 0.4);
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    transition: .5s ease;
+}
+.photo3:hover .overlay3 {
+    width: 0;
+    height:0;
+    left: 150px;
+    bottom:150px;
+}
+.photo4{
+    position: relative;
+    width: 150px;
+}
+.photo4>img{
+    display: block;
+    width: 150px;
+    height: 150px;
+}
+.overlay4 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0, 0.4);
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    transition: .5s ease;
+}
+.photo4:hover .overlay4 {
+    width: 0;
+    right: 150px;
+}
+.photo5{
+    position: relative;
+    width: 150px;
+}
+.photo5>img{
+    display: block;
+    width: 150px;
+    height: 150px;
+}
+.overlay5 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0, 0.4);
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    transition: .5s ease;
+    opacity: 1;
+}
+.photo5:hover .overlay5 {
+    opacity: 0;
+}
+.photo6{
+    position: relative;
+    width: 150px;
+}
+.photo6>img{
+    display: block;
+    width: 150px;
+    height: 150px;
+}
+.overlay6 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0, 0.4);
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    transition: .5s ease;
+}
+.photo6:hover .overlay6 {
+    width: 0;
+    left: 150px;
+}
+.photo7{
+    position: relative;
+    width: 150px;
+}
+.photo7>img{
+    display: block;
+    width: 150px;
+    height: 150px;
+}
+.overlay7 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0, 0.4);
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    transition: .5s ease;
+}
+.photo7:hover .overlay7 {
+    width: 0;
+    height: 0;
+}
+.photo8{
+    position: relative;
+    width: 150px;
+}
+.photo8>img{
+    display: block;
+    width: 150px;
+    height: 150px;
+}
+.overlay8 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0, 0.4);
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    transition: .5s ease;
+}
+.photo8:hover .overlay8 {
+    width: 150px;
+    height: 0;
+}
+.photo9{
+    position: relative;
+    width: 150px;
+}
+.photo9>img{
+    display: block;
+    width: 150px;
+    height: 150px;
+}
+.overlay9 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0, 0.4);
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    transition: .5s ease;
+}
+.photo9:hover .overlay9 {
+    width: 0;
+    height: 0;
+    left: 150px;
+}
