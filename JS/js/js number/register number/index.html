@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         //register number validation
+         let R = prompt('TA registeriin dugaaraa oruulna uu');
+        let M = R.substr(0, 2)
+        /*if ((R.length) === 10){
+            if (Number(M) === NaN){
+                console.log('mon bauna');
+            }
+            else{
+                console.log('bish bn');
+            }
+        }
+        else{
+            console.log('buruu utga baina');
+        }*/
+        if((R.length) === 10){
+            if (Number(M)===NaN){
+                console.log('mon');
+            }
+            else{
+                console.log('bish');
+            }
+        }
+        else{
+            console.log('buruu utga');
+        }
+    </script>
+</body>
+</html>
