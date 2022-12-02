@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       /* let on = prompt('on oruulna uu');
+        let sar = prompt('sar oruulna uu');
+        let odor = prompt('odor oruulna uu');
+
+        if(sar.length === 1){
+            let sarr = (` 0${sar} `);
+            console.log(`${on } -${sarr } -${ odor }` )
+        }
+        if (odor.length === 1) {
+            let odorr = (` 0${odor} `);
+            console.log(`${on} -${sar} -${odorr}`)
+        }*/
+
+        //new 2. Гараас утасны дугаар ( 99001234 ) аван шалгах, зөв дугаар бол харгалзах операторыг (Unitel, Mobicom, G-Mobile, Skytel) хэвлэх , буруу дугаар бол буруу гэсэн мессежийг өгөх
+
+        let number = prompt('utasniii dugaar oruulna uu?');
+
+        if(Number(number.length===8)){
+            if(Number(number.substr(0,2)) === Number("88") || Number(number.substr(0, 2)) === Number("89") || Number(number.substr(0, 2)) === Number("86") || Number(number.substr(0, 2)) === Number("80")){
+                console.log('unitel');
+            }
+            if(Number(number.substr(0, 2)) === Number("99") || Number(number.substr(0, 2)) === Number("95") || Number(number.substr(0, 2)) === Number("85")) {
+                console.log('mobicom');
+            }
+            if (Number(number.substr(0, 2)) === Number("96") || Number(number.substr(0, 2)) === Number("91")) {
+                console.log('skytel');
+            }
+            if (Number(number.substr(0, 2)) === Number("98") || Number(number.substr(0, 2)) === Number("93")) {
+                console.log('G-mobail');
+            }
+        }
+        else{
+            console.log('utasnii dugaaraa shalgana uu');
+        }
+    </script>
+</body>
+</html>

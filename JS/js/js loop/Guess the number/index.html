@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let e = prompt("ta duriin too avna uu");
+            e = Number(e);
+            let q = prompt("Ta dahin duriin too avna uu");
+            q = Number(q);
+
+            let isTaav = true;
+
+            let max, min;
+            if (e < q) {
+                max = q;
+                min = e;
+            } else {
+                max = e;
+                min = q;
+            }
+
+            let random = (Math.round(Math.random() * (max - min) + min));
+            console.log(random);
+
+
+
+            let ntoo = prompt("Ta taah toogoo oruulna uu???");
+            ntoo = Number(ntoo);
+
+
+            while (ntoo !== random) {
+                isTaav = false;
+                break;
+            }
+
+
+
+            if (isTaav) {
+                console.log(`Tanii taasan ${ntoo} ni RANDOM tootoi taarj baina 🟩`)
+            } else {
+                console.log(`Tanii taasan ${ntoo} ni RANDOM tootoi taarahgui baina 🟥 `)
+            }
+       /* let n = 40;
+        let r = prompt('neg duriin too oruulah');
+
+        if((Math.round(Math.random()*100)) === n ){
+            console.log('zov too baina');
+        }else{
+            console.log('dahiad oruul')
+        }*/
+    </script>
+</body>
+</html>
