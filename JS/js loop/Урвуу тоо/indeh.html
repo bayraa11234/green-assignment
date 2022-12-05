@@ -8,14 +8,15 @@
 </head>
 <body>
     <script>
-        //100 hurtleh niilber
-            const n = prompt('too bich');
-            let index = 1;
-            let sum = 0;
-            while (index <= n) {
-                sum = sum + index;
-                index++;
-            }console.log(sum);
+        //zasah
+        let urvuu = prompt('too bich'), bb, uuvru = 0, kk= 0; 
+for ( y = urvuu.length; y > 0 ; y-- ){
+    bb =urvuu % 10 
+    console.log(urvuu);
+    uuvru = uuvru+ bb.toString()
+    urvuu = Math.floor(urvuu / 10 )
+}
+console.log(Number(uuvru));
     </script>
 </body>
 </html>
