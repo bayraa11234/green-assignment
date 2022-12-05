@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arrayOfNumbers = [43,56,23,89,88,90,99,652,15,290,11];
+        //toonuudin niilber
+        let niit = 0;
+
+        for (let i = 0; i < arrayOfNumbers.length; i++) {
+            niit += arrayOfNumbers[i];
+        }
+        console.log(niit);
+        //Hamgiin ih too
+        let maxNumber = arrayOfNumbers[0];
+
+        for(let i = 0; i<arrayOfNumbers.length; i++){
+        if(maxNumber<arrayOfNumbers[i]){
+            maxNumber=arrayOfNumbers[i];
+        }
+       }
+       console.log(maxNumber);
+       //Hamgiin baga too
+       let minNumber = arrayOfNumbers[0];
+       for(let i = 0; i<arrayOfNumbers.length; i++){
+           if(minNumber<arrayOfNumbers[i]){
+               minNumber=arrayOfNumbers[i];
+           }
+       }
+       console.log(minNumber);
+       //hamgiin urd ororn nemeh
+       let arr = [43, 56, 23, 89, 88, 90, 99, 652, 15, 290, 11];
+       for(let i = arr.length-1; i>=0; i--){
+           arr[i+1]=arr[i];
+       }
+       arr[0]=100;//minii duriin tooo 
+       console.log(arr);
+       //hamgiin ard oron nemeh
+        arr[arr.length]=23
+        console.log(arr);
+
+
+    </script>
+</body>
+</html>
