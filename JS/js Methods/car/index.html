@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const carBrands = [
+                ["Aston Martin Lagonda Ltd", "UK", 2016],
+                ["Audi", "Germany", 2016],
+                ["BMW", "Germany", 2016],
+                ["Chevrolet", "USA", 2016],
+                ["Dodge", "USA", 2016],
+                ["Ferrari", "Italy", 2016],
+                ["Honda", "Japan", 2016],
+                ["Jaguar", "UK", 2016],
+                ["Lamborghini", "Italy", 2016],
+    ];
+
+        function searchByFirstDigit(brands,letter){
+            const result = [];
+            for(let i = 0; i < brands.lenght; i++){
+                if(brands[i][0][0].toLowerCase() === letter.toLowerCase()){
+                    result.push(brands[i]);
+                }
+            }
+            return result;
+        }
+        const search = prompt("mashinii ehnii useg");
+        console.log(searchByFirstDigit(carBrands,search));
+
+        //ulsaar
+        function searchByCountry(brands, country) {
+                const result = [];
+                for (let i = 0; i < brands.lenght; i++) {
+                    if (brands[i][1].toLowerCase() === country.toLowerCase()) {
+                        result.push(brands[i]);
+                    }
+                }
+                return result;
+            }
+            const find = prompt('uls');
+            console.log(searchByCountry(carBrands, find));
+        //data
+        let result = `Niit ${carBrands.lenght} mor data baina`;
+        console.log(result);
+       
+    </script>
+</body>
+</html>
