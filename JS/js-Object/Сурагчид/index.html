@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const data = [
+        //         { gender: 'M', firstName: 'Dorj', lastName: 'Bat', point: 80, age: 19 },
+        //         { gender: 'F', firstName: 'Puntsag', lastName: 'Balbar', point: 60, age: 29 },
+        //         { gender: 'F', firstName: 'Seremj', lastName: 'Bold', point: 79, age: 39 },
+        //         { gender: 'M', firstName: 'Sengur', lastName: 'Purev', point: 97, age: 39 },
+        //         { gender: 'F', firstName: 'Borgio', lastName: 'Dondog', point: 98, age: 59 },
+        //         { gender: 'F', firstName: 'Dankh', lastName: 'Gotov', point: 87, age: 69 },
+        //         { gender: 'M', firstName: 'Halbaga', lastName: 'Suvd', point: 80, age: 17 },
+        //         { gender: 'M', firstName: 'Seree', lastName: 'Tsetseg', point: 60, age: 18 },
+        //         { gender: 'F', firstName: 'Goku', lastName: 'Baasan', point: 59, age: 16 },
+        //         { gender: 'M', firstName: 'Naruto', lastName: 'Dorj', point: 40, age: 13 }
+        //     ]
+
+        //     // Huiseer ni, Er: ted, Em: ted
+        //     // Nasnii angilaar ni: 0-17 hurteleh, 18-25, 25-40, 40+
+        //     // Avsan dungeer ni A:1,B:1,C:1,D:1,F:1
+
+        //     function getCountByGender(list, gender) {
+        //         let count = 0;
+        //         for (let i = 0; i < list.length; i++) {
+        //             if (list[i].gender === gender) {
+        //                 count++;
+        //             }
+        //         }
+        //         return count;
+        //     }
+
+        //     const femaleCount = getCountByGender(data, 'F');
+        //     const maleCount = getCountByGender(data, 'M');
+
+        //     console.log(`Niit ${femaleCount} emegtei, ${maleCount} eregetei baina.`);
+
+        //     function getCountByFieldValueRange(list, key, min, max) {
+        //         let count = 0;
+        //         for (let i = 0; i < list.length; i++) {
+        //             if (list[i][key] >= min && list[i][key] < max) {
+        //                 count++;
+        //             }
+        //         }
+        //         return count;
+        //     }
+
+        //     const childrenCount = getCountByFieldValueRange(data, 'age', 0, 18);
+        //     const youth = getCountByFieldValueRange(data, 'age', 18, 30);
+        //     const adult = getCountByFieldValueRange(data, 'age', 30, 55);
+        //     const elder = getCountByFieldValueRange(data, 'age', 55, 200);
+        //     console.log(`Niit: 
+        //     ${childrenCount} huuhed,
+        //     ${youth} zaluu nasnii humuus,
+        //     ${adult} dundaj ergem nasnii humuus,
+        //     ${elder} ahmad nasnii humuus baina`);
+
+        //     const totalA = getCountByFieldValueRange(data, 'point', 90, 101);
+
+
+        //     console.list
+        //     // function getCountByName()
+        const data = [
+                { single: 'yes', gender: 'male',   firstname: 'Ermuun', lastname: 'Bat', hobby: '', age: '19' },
+                { single: 'no',  gender: 'male',   firstname: 'Temuulen', lastname: 'Batbold', hobby: '', age: '22' },
+                { single: 'no',  gender: 'male',   firstname: 'Usukhbayar', lastname: 'Bayaraa', hobby: '', age: '23' },
+                { single: 'no',  gender: 'male',   firstname: 'Sukhbat', lastname: 'Sukhbat', hobby: '', age: '35' },
+                { single: 'yes', gender: 'male',   firstname: 'Ganbold', lastname: 'Boldoo', hobby: '', age: '39' },
+                { single: 'yes', gender: 'male',   firstname: 'Amur', lastname: 'Amar', hobby: '', age: '16' },
+                { single: 'no',  gender: 'male',   firstname: 'Dulguun', lastname: 'Dalai', hobby: 'writing', age: '18' },
+                { single: 'yes', gender: 'female', firstname: 'Namuunbaigali', lastname: 'Baigalaa', hobby: 'book', age: '28' },
+                { single: 'yes', gender: 'male',   firstname: 'Baljinnyam', lastname: 'Nyamaa', hobby: '', age: '19' },
+                { single: 'no',  gender: 'male',   firstname: 'Anand', lastname: 'Daram', hobby: '', age: '9' },
+                { single: 'yes', gender: 'male',   firstname: 'Odbayar', lastname: 'Dorjsuren', hobby: 'sport', age: '18' },
+                { single: 'no',  gender: 'female', firstname: 'Narantsetseg', lastname: 'Jargalsaikhan', hobby: 'art', age: '23' },
+                { single: 'yes', gender: 'male',   firstname: 'Aimergen', lastname: 'Tukhbyetolla', hobby: 'football', age: '33' },
+                { single: 'no',  gender: 'male',   firstname: 'Tengisbold', lastname: 'Tengis', hobby: 'gaming', age: '35' },
+                { single: 'yes', gender: 'female', firstname: 'Indra', lastname: 'Baasanjargal', hobby: 'ballet', age: '30' },
+                { single: 'yes', gender: 'female', firstname: 'Binderya', lastname: 'Erdene', hobby: '', age: '18' },
+                { single: 'no',  gender: 'male',   firstname: 'Sed-Erdene', lastname: 'Batbayar', hobby: '', age: '17' },
+                { single: 'yes', gender: 'male',   firstname: 'Javkhlant', lastname: 'Jargal', hobby: '', age: '28' },
+                { single: 'yes', gender: 'male',   firstname: 'Dalaikhuu', lastname: '', hobby: '', age: '16' },
+            ]
+
+            // Huiseer ni, Er: ted, Em: ted
+            // Nasnii angilaar ni: 0-17 hurteleh, 18-25, 25-40, 40+
+            // Avsan dungeer ni A:1,B:1,C:1,D:1,F:1
+
+            function getCountByGender(list, gender) {
+                let count = 0;
+                for (let i = 0; i < list.length; i++) {
+                    if (list[i].gender === gender) {
+                        count++;
+                    }
+                }
+                return count;
+            }
+            //gants biy esehiiig shalgah
+            function getCountBySingle(list, single) {
+                    let count = 0;
+                    for (let i = 0; i < list.length; i++) {
+                        if (list[i].single === single) {
+                            count++;
+                        }
+                    }
+                    return count;
+                }
+
+            const femaleCount = getCountByGender(data, 'female');
+            const maleCount = getCountByGender(data, 'male');
+            const singleCount = getCountBySingle(data, 'yes');
+
+            console.log(`Niit ${femaleCount} emegtei, ${maleCount} eregetei,  gants biy ${singleCount} hun baina.`);
+
+            function getCountByFieldValueRange(list, key, min, max) {
+                let count = 0;
+                for (let i = 0; i < list.length; i++) {
+                    if (list[i][key] >= min && list[i][key] < max) {
+                        count++;
+                    }
+                }
+                return count;
+            }
+
+            const childrenCount = getCountByFieldValueRange(data, 'age', 0,20);
+            const youth = getCountByFieldValueRange(data, 'age', 20, 200);
+            console.log(`Niit: ${childrenCount} huuhed, ${youth}-n shirheg  20 deesh nasnii humuus baina`);
+
+            const totalA = getCountByFieldValueRange(data, 'point', 90, 101);
+
+
+            console.list
+            // function getCountByName()
+
+    </script>
+</body>
+</html>
