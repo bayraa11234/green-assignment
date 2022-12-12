@@ -41,6 +41,18 @@
         //Сүхбаатар аймгийг элементийн id-аар аван console.log дээр хэвлэх
         let suhbaatar = document.querySelector("#aimag-315");
         console.log(suhbaatar);
+
+        const li = document.querySelectorAll("ul>li");
+        for(let i = 0; i<li.lenght; i++){
+            li[i].style.margin = "20px";
+            li[i].style.color = "#ff0";
+            li[i].style.backgroundColor = "#f0f";
+        }
+        console.log(li);
+        document.querySelector("#aimagNames").style.color = "#00f";
+        document.querySelector("#aimagNames").style.backgroundColor = "#ff0";
+        document.querySelector("#aimagNames").style.fontSize= "24px";
+        document.querySelector("#aimagNames").style.borderRadius= "24px";
     </script>
 </body>
 </html>
