@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="myBtn">Random color generator</button>
+    <script>
+        let myButton = document.querySelector("#myBtn")
+
+            function changeBackgroundColor() {
+                myButton.style = "background-color: green"
+            }
+            // myButton.addEventListener("click", changeBackgroundColor())
+            myBtn.addEventListener("click", getRandomColor)
+
+            //randomooor backgroundiin ongo solih
+            function getRandomNumber(min, max) {
+                return Math.floor(Math.random() * (max - min)) + min;
+            }
+            function getRandomColor() {
+                const green = getRandomNumber(0, 255);
+                const red = getRandomNumber(0, 255);
+                const blue = getRandomNumber(0, 255);
+                const htmlTag = document.querySelector("html");
+                htmlTag.style.backgroundColor = `rgb(${red},${green},${blue})`;
+                myBtn.style.color = `rgb(${red},${green},${blue})`;
+            }
+    </script>
+</body>
+</html>
