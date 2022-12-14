@@ -1,35 +1,39 @@
-const todoTarget = document.querySelector('#todoTarget');
+// const todoTarget = document.querySelector('#todoTarget');
+
+let n = prompt('Таах утга оруулна уу?');
+
 const testTarget = document.querySelector('#testTarget');
 const inputTarget = document.querySelector('#inputTarget');
 
-console.log(todoTarget.childNodes);
-const firstLi = todoTarget.querySelectorAll("li")[0];
-console.log(firstLi);
+// console.log(todoTarget.childNodes);
+// const firstLi = todoTarget.querySelectorAll("li")[0];
+// console.log(firstLi);
 // parentNode.removeChild(childNode);
 // firstLi.parentNode.removeChild(firstLi);
 
 inputTarget.addEventListener("keypress",function(e){
     if(e.key === "Enter"){
-        testTarget.innerHTML = e.target.value;
 
-            let n = 25;
         if(Number(e.target.value) === Number(n)){
-            console.log("zov taalaa");
+            document.querySelector(".TestTarget").innerHTML ="😍"+ e.target.value + " Зөв таалаа 🥰";
+            document.querySelector(".testTarget").innerHTML = "🤩  🎈  🥳 ";
         }
         if(Number(e.target.value)){
             if(Number(e.target.value) > Number(n)){
-                console.log("ih baina");
+                document.querySelector(".TestTarget").innerHTML ="";
+                document.querySelector(".testTarget").innerHTML = "🧐 " + e.target.value + " Их байна 😜";
             }
             if(Number(e.target.value) < Number(n)){
-                console.log("baga baina");
+                document.querySelector(".TestTarget").innerHTML ="";
+                document.querySelector(".testTarget").innerHTML = "🤔 "+e.target.value + " Бага байна 🤪";
             }
         }
         else{
-            console.log("too bich");
+            document.querySelector(".TestTarget").innerHTML ="";
+            document.querySelector(".testTarget").innerHTML ="😵 "+ e.target.value + " Утга ороогүй байна 😵";
         }
+        // result(todoTarget);
+    
     }
     
-})
-    // let n = e.target.value ;
-    // console.log(n);
-    
+});
