@@ -1,12 +1,35 @@
-let text = document.querySelector("#Num");
+const todoTarget = document.querySelector('#todoTarget');
+const testTarget = document.querySelector('#testTarget');
+const inputTarget = document.querySelector('#inputTarget');
 
-const n = 10;
+console.log(todoTarget.childNodes);
+const firstLi = todoTarget.querySelectorAll("li")[0];
+console.log(firstLi);
+// parentNode.removeChild(childNode);
+// firstLi.parentNode.removeChild(firstLi);
 
-console.log(text);
+inputTarget.addEventListener("keypress",function(e){
+    if(e.key === "Enter"){
+        testTarget.innerHTML = e.target.value;
 
-if(text < n){
-    console.log("baga baina");
-}
-else{
-    console.log("ih baina");
-}
+            let n = 25;
+        if(Number(e.target.value) === Number(n)){
+            console.log("zov taalaa");
+        }
+        if(Number(e.target.value)){
+            if(Number(e.target.value) > Number(n)){
+                console.log("ih baina");
+            }
+            if(Number(e.target.value) < Number(n)){
+                console.log("baga baina");
+            }
+        }
+        else{
+            console.log("too bich");
+        }
+    }
+    
+})
+    // let n = e.target.value ;
+    // console.log(n);
+    
