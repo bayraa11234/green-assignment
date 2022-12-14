@@ -1,10 +1,9 @@
 let SCORE = 0;
-const TITLE_COUNT = 25; 
+const TITLE_COUNT = 49; 
 const TIMER = 10;
 let MILLISECONDS = 0;
 let SECONDS = TIMER;
 let isGameOver = false;
-
 
 const scoreTarget = document.querySelector("#scoreTarget");
 const gameOverScoreTarget = document.querySelector("#gameOverTarget")
