@@ -4,53 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <h5> 00:000</h5>
-    <script>
-        const TIMER = 10;
-        let MILLISECONDS = 0;
-        let SECONDS = TIMER;
-        let MINUTES = 0;
-        const timerTarget = document.querySelector("h5");
-
-
-        function updateTimer() {
-                if (MILLISECONDS <= 0){
-                    SECONDS--;
-                    MILLISECONDS = 990;
-                }
-                MILLISECONDS -= 10;
-
-                if (MILLISECONDS <= 0) {
-                    SECONDS--;
-                    MILLISECONDS = 999;
-                }
-                MILLISECONDS -= 1;
-
-                if (MILLISECONDS <= 0 && SECONDS <= 0) {
-                    clearInterval(countDown);
-                    gameOver();
-                }
-
-
-                let timerResult = "";
-                if (SECONDS < 10) {
-                    timerResult += "0";
-                }
-                timerResult += SECONDS
-                timerResult += ":";
-                if (MILLISECONDS < 100) {
-                    timerResult + "0";
-                }
-                if (MILLISECONDS < 10) {
-                    timerResult + "0";
-                }
-                timerResult += MILLISECONDS;
-                timerTarget.innerHTML = timerResult;
-            }
-            const countDown = setInterval(updateTimer, 10);
-    </script>
+    <div class="box">
+        <h5><span class="minutes">00</span>00:00</h5>
+    </div>
+    <script src="main.js"></script>
 </body>
 </html>
