@@ -8,13 +8,98 @@
 </head>
 <body>
     <script>
-        let arr = prompt('olon orontoi too oruulah');
-        let i = 0;
-        while (i < arr.length){
-            arr[i] === 1
-            console.log(arr[i]);
-            i++;
+    //     let arr = prompt('olon orontoi too oruulah');
+    //     let arr1 = [];
+    //     let arr2 = [];
+    //     let arr3 = [];
+    //    for(let i = 0;i<=arr.length;i++){
+    //         if(arr[i] === '1'){
+    //             arr1.push(arr[i]);
+    //         }
+    //         if(arr[i] === '2'){
+    //             arr1.push(arr[i]);
+    //             console.log(arr2.length);
+    //         }
+    //         if(arr[i] === '3'){
+    //             arr1.push(arr[i]);
+    //             console.log(arr3.length);
+    //         }
+    //         // if(arr[i] === '4'){
+    //         //     arr1.push(arr[i]);
+    //         //     console.log(arr1.length);
+    //         // }
+    //         // if(arr[i] === '5'){
+    //         //     arr1.push(arr[i]);
+    //         //     console.log(arr2.length);
+    //         // }
+    //         // if(arr[i] === '6'){
+    //         //     arr1.push(arr[i]);
+    //         //     console.log(arr3.length);
+    //         // }
+    //         // if(arr[i] === '7'){
+    //         //     arr1.push(arr[i]);
+    //         //     console.log(arr1.length);
+    //         // }
+    //         // if(arr[i] === '8'){
+    //         //     arr1.push(arr[i]);
+    //         //     console.log(arr2.length);
+    //         // }
+    //         // if(arr[i] === '9'){
+    //         //     arr1.push(arr[i]);
+    //         //     console.log(arr3.length);
+    //         // }
+    //         // if(arr[i] === '0'){
+    //         //     arr1.push(arr[i]);
+    //         //     console.log(arr3.length);
+    //         // }
+    //    }
+    //    console.log(arr1.length);
+    let nn = "998765432100";
+    let arr = [];
+    let arr3 =[];
+
+    // const Too = nn.split("");
+    // for(let i = 0; i<=nn.length; i++){  
+    //     for(let j = 0; j<=nn.length; j++){
+    //         if(Number(nn[j]) === i){    
+    //             if(arr[0] === nn[j] || arr){
+    //                 arr.push(nn[i]);
+    //                  console.log(nn[j] +'  '+  "ni"+'  ' + arr.length+'  ' + 'shirheg baina');
+    //                  // console.log(arr);
+    //             }
+    //             if(nn[j+1] !== nn[j]){
+    //                 arr=[];  
+    //             }
+               
+    //         }else{
+    //             // console.log('ajilku bnnaaa');
+    //         }
+    //     }
+    // }
+    for(let i = 0; i<=nn.length; i++){
+        for(let j = 0; j<=nn.length; j++){
+            if(i === Number(nn[j])){
+                arr.push(nn[j]);
+                // console.log(arr);
+            }
         }
+    }
+    console.log(arr);
+    // let arr2 = arr.filter((a) => {
+    //       return a === 0;
+    //     });
+    //     console.log(arr2);
+
+        for (const val of arr) {
+          if(Number(val)===9){
+            arr3.push(val);
+        console.log(arr3);
+
+          
+        }
+    }
+
+
     </script>
 </body>
 </html>

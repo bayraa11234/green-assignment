@@ -66,25 +66,25 @@
         //     console.list
         //     // function getCountByName()
         const data = [
-                { single: 'yes', gender: 'male',   firstname: 'Ermuun', lastname: 'Bat', hobby: '', age: '19' },
-                { single: 'no',  gender: 'male',   firstname: 'Temuulen', lastname: 'Batbold', hobby: '', age: '22' },
-                { single: 'no',  gender: 'male',   firstname: 'Usukhbayar', lastname: 'Bayaraa', hobby: '', age: '23' },
-                { single: 'no',  gender: 'male',   firstname: 'Sukhbat', lastname: 'Sukhbat', hobby: '', age: '35' },
-                { single: 'yes', gender: 'male',   firstname: 'Ganbold', lastname: 'Boldoo', hobby: '', age: '39' },
-                { single: 'yes', gender: 'male',   firstname: 'Amur', lastname: 'Amar', hobby: '', age: '16' },
-                { single: 'no',  gender: 'male',   firstname: 'Dulguun', lastname: 'Dalai', hobby: 'writing', age: '18' },
-                { single: 'yes', gender: 'female', firstname: 'Namuunbaigali', lastname: 'Baigalaa', hobby: 'book', age: '28' },
-                { single: 'yes', gender: 'male',   firstname: 'Baljinnyam', lastname: 'Nyamaa', hobby: '', age: '19' },
-                { single: 'no',  gender: 'male',   firstname: 'Anand', lastname: 'Daram', hobby: '', age: '9' },
-                { single: 'yes', gender: 'male',   firstname: 'Odbayar', lastname: 'Dorjsuren', hobby: 'sport', age: '18' },
-                { single: 'no',  gender: 'female', firstname: 'Narantsetseg', lastname: 'Jargalsaikhan', hobby: 'art', age: '23' },
-                { single: 'yes', gender: 'male',   firstname: 'Aimergen', lastname: 'Tukhbyetolla', hobby: 'football', age: '33' },
-                { single: 'no',  gender: 'male',   firstname: 'Tengisbold', lastname: 'Tengis', hobby: 'gaming', age: '35' },
-                { single: 'yes', gender: 'female', firstname: 'Indra', lastname: 'Baasanjargal', hobby: 'ballet', age: '30' },
-                { single: 'yes', gender: 'female', firstname: 'Binderya', lastname: 'Erdene', hobby: '', age: '18' },
-                { single: 'no',  gender: 'male',   firstname: 'Sed-Erdene', lastname: 'Batbayar', hobby: '', age: '17' },
-                { single: 'yes', gender: 'male',   firstname: 'Javkhlant', lastname: 'Jargal', hobby: '', age: '28' },
-                { single: 'yes', gender: 'male',   firstname: 'Dalaikhuu', lastname: '', hobby: '', age: '16' },
+                { single: 'yes', gender: 'male',   firstname: 'Ermuun', lastname: 'Bat', hobby: '', age: 2002 },
+                { single: 'no',  gender: 'male',   firstname: 'Temuulen', lastname: 'Batbold', hobby: '', age: 2000 },
+                { single: 'no',  gender: 'male',   firstname: 'Usukhbayar', lastname: 'Bayaraa', hobby: '', age: 1999 },
+                { single: 'no',  gender: 'male',   firstname: 'Sukhbat', lastname: 'Sukhbat', hobby: '', age: '1985' },
+                { single: 'yes', gender: 'male',   firstname: 'Ganbold', lastname: 'Boldoo', hobby: '', age: '1981' },
+                { single: 'yes', gender: 'male',   firstname: 'Amur', lastname: 'Amar', hobby: '', age: '2005' },
+                { single: 'no',  gender: 'male',   firstname: 'Dulguun', lastname: 'Dalai', hobby: 'writing', age: '1995' },
+                { single: 'yes', gender: 'female', firstname: 'Namuunbaigali', lastname: 'Baigalaa', hobby: 'book', age: '1992' },
+                { single: 'yes', gender: 'male',   firstname: 'Baljinnyam', lastname: 'Nyamaa', hobby: '', age: '2001' },
+                { single: 'no',  gender: 'male',   firstname: 'Anand', lastname: 'Daram', hobby: '', age: '1998' },
+                { single: 'yes', gender: 'male',   firstname: 'Odbayar', lastname: 'Dorjsuren', hobby: 'sport', age: '2003' },
+                { single: 'no',  gender: 'female', firstname: 'Narantsetseg', lastname: 'Jargalsaikhan', hobby: 'art', age: '1998' },
+                { single: 'yes', gender: 'male',   firstname: 'Aimergen', lastname: 'Tukhbyetolla', hobby: 'football', age: '1987' },
+                { single: 'no',  gender: 'male',   firstname: 'Tengisbold', lastname: 'Tengis', hobby: 'gaming', age: '1985' },
+                { single: 'yes', gender: 'female', firstname: 'Indra', lastname: 'Baasanjargal', hobby: 'ballet', age: '1983' },
+                { single: 'yes', gender: 'female', firstname: 'Binderya', lastname: 'Erdene', hobby: '', age: '2004' },
+                { single: 'no',  gender: 'male',   firstname: 'Sed-Erdene', lastname: 'Batbayar', hobby: '', age: '2005' },
+                { single: 'yes', gender: 'male',   firstname: 'Javkhlant', lastname: 'Jargal', hobby: '', age: '1992' },
+                { single: 'yes', gender: 'male',   firstname: 'Dalaikhuu', lastname: '', hobby: '', age: '2006' },
             ]
 
             // Huiseer ni, Er: ted, Em: ted
@@ -127,8 +127,8 @@
                 return count;
             }
 
-            const childrenCount = getCountByFieldValueRange(data, 'age', 0,20);
-            const youth = getCountByFieldValueRange(data, 'age', 20, 200);
+            const childrenCount = getCountByFieldValueRange(data, 'age', 2000,2023);
+            const youth = getCountByFieldValueRange(data, 'age', 0, 2000);
             console.log(`Niit: ${childrenCount} huuhed, ${youth}-n shirheg  20 deesh nasnii humuus baina`);
 
             const totalA = getCountByFieldValueRange(data, 'point', 90, 101);
@@ -136,6 +136,18 @@
 
             console.list
             // function getCountByName()
+            function getNewAge(){
+            const d = new Date();
+            let year = d.getFullYear();
+            let newData = {...data};
+            for(let i = 0; i<=data.length; i++){
+                let utga = data[i].age;
+                let newAge = (year - utga);
+                newData[i].age = newAge;
+                console.log(`${newData[i].firstname} нас: ${newData[i].age}`);
+            }
+        }
+        getNewAge();
 
     </script>
 </body>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [4, 32, 2, 5, 8, -10, 20, 1, 0, -20];
+        const arrUrt = arr.length;
+        let baga = 0;
+        let bab = [];
+        function arraySorter(){
+            for(let i = 0 ;i<=arrUrt; i++){
+                let baga = Math.min(...arr);
+                // console.log(baga);
+                let hasArr = arr.splice(arr.indexOf(baga),1);
+                // console.log(arr.indexOf(baga));
+                console.log(hasArr);
+            }
+
+        }
+        arraySorter();
+    </script>
+</body>
+</html>

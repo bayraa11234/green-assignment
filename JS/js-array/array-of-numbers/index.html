@@ -8,43 +8,43 @@
 </head>
 <body>
     <script>
-        let arrayOfNumbers = [43,56,23,89,88,90,99,652,15,290,11];
-        //toonuudin niilber
+        // 1. arrayOfNumbers гэсэн variable зарлаад дараах тоонуудыг оруул. 43, 56, 23, 89, 88, 90, 99, 652, 15, 290, 11
+        let arr1 = [43,56,23,89,88,90,99,652,15,290,11];
+        //2. Array доторх тоонуудын нийлбэрийг ол.
         let niit = 0;
 
-        for (let i = 0; i < arrayOfNumbers.length; i++) {
-            niit += arrayOfNumbers[i];
+        for (let i = 0; i < arr1.length; i++) {
+            niit += arr1[i];
         }
         console.log(niit);
-        //Hamgiin ih too
-        let maxNumber = arrayOfNumbers[0];
+        //3. Хамгийн их тоог ол.
+        let maxNumber = arr1[0];
 
-        for(let i = 0; i<arrayOfNumbers.length; i++){
-        if(maxNumber<arrayOfNumbers[i]){
-            maxNumber=arrayOfNumbers[i];
+        for(let i = 0; i<arr1.length; i++){
+        if(maxNumber<arr1[i]){
+            maxNumber=arr1[i];
         }
        }
        console.log(maxNumber);
-       //Hamgiin baga too
-       let minNumber = arrayOfNumbers[0];
-       for(let i = 0; i<arrayOfNumbers.length; i++){
-           if(minNumber<arrayOfNumbers[i]){
-               minNumber=arrayOfNumbers[i];
+       //4. Хамгийн бага тоог ол.
+       let minNumber = arr1[0];
+       for(let i = 0; i<arr1.length; i++){
+           if(minNumber>arr1[i]){
+               minNumber=arr1[i];
            }
        }
        console.log(minNumber);
-       //hamgiin urd ororn nemeh
+       //5. Array - ийн эхэнд дурын 1 тоог нэм.
+       console.log(arr1);
        let arr = [43, 56, 23, 89, 88, 90, 99, 652, 15, 290, 11];
        for(let i = arr.length-1; i>=0; i--){
            arr[i+1]=arr[i];
        }
-       arr[0]=100;//minii duriin tooo 
+       arr[0]=12345; 
        console.log(arr);
-       //hamgiin ard oron nemeh
-        arr[arr.length]=23
+       //6. Array - ийн төгсгөлд дурын 1 тоог нэм
+        arr[arr.length]=12345
         console.log(arr);
-
-
     </script>
 </body>
 </html>

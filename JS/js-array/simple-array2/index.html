@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let itCompanies =['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon',];
+    // Array - аас эхний 3 компанийг хайчилж ав
+        let first3 = itCompanies.splice(0, 3);
+        console.log(first3);
+    // Array - аас сүүлийн 3 компанийг хайчилж ав
+        let last3 =itCompanies.splice(itCompanies.length-3, 3);
+        console.log(last3);
+    // Мэдээллийн технологийн дунд компани эсвэл компаниудыг arrey - аас хайчилж ав
+    console.log(`dundah company: ${itCompanies[itCompanies.length - Math.round(itCompanies.length / 2)]}`);
+   // Эхний мэдээллийн технологийн компанийг array - аас хас
+   let itCompanies2 =['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon',];
+    console.log(itCompanies2.splice(0, 1));
+// Сүүлийн мэдээллийн технологийн компанийг array - аас хас
+console.log(itCompanies2.splice(itCompanies2.length-1, 1))
+    </script>
+</body>
+</html>

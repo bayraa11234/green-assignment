@@ -1,54 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-         let students = [
-                {
-                    name: 'Сэд-Эрдэнэ',
-                    age: 19,
-                    gender: 'male',
-                },
-                {
-                    name: 'Индра',
-                    age: 19,
-                    gender: 'female'
-                },
-                {
-                    name: 'Хатнаа ',
-                    age: 21,
-                    gender: "male"
-                },
-                {
-                    name: 'Тэмүүлэн',
-                    age: 23,
-                    gender: "male"
-                },
-                {
-                    name: 'Намуун',
-                    age: 23,
-                    gender: "female"
-                },
-            ]
-            function getCountByGender(list,gender){
-                let count = 0;
-                for(let i = 0; i<list.lenght; i++){
-                    if(list[i].gender === gender){
-                        count++
-                    }
-                }
-                return count;
+      let students = [
+        {
+          name: "Сэд-Эрдэнэ",
+          age: 19,
+          gender: "male",
+        },
+        {
+          name: "Индра",
+          age: 19,
+          gender: "female",
+        },
+        {
+          name: "Хатнаа ",
+          age: 21,
+          gender: "male",
+        },
+        {
+          name: "Тэмүүлэн",
+          age: 23,
+          gender: "male",
+        },
+        {
+          name: "Намуун",
+          age: 23,
+          gender: "female",
+        },
+      ];
+      function getCountByGender(){
+      let text = "";
+      let arrMale = [];
+      let arrFemale = [];
+      let sum = "";
+      for (let i = 0; i < students.length; i++) {
+        text += students[i].gender
+            if(students[i].gender ==='male'){
+                arrMale.push(students[i].gender);
             }
+            if(students[i].gender ==='female'){
+                arrFemale.push(students[i].gender);
+            }
+      }
+      console.log(arrMale.length+ ' ' + 'eregtei');
+      console.log(arrFemale.length+ ' ' + 'emegtei');
+    }
 
-            const femaleCount = getCountByGender(students, 'female');
-            const maleCount = getCountByGender(students, 'male');
+    getCountByGender();
 
-            console.log(`Niit ${femaleCount} emegtei, ${maleCount} eregetei baina.`);
+    function getCountByAge(){
+        let sum = 0;
+        for(let i = 0; i <students.length; i++){
+            sum+=students[i].age;
+       }
+       let ageAverage = sum / students.length;
+       console.log('nasnii dundaj'+ ' '+ ageAverage);
+    }
+    getCountByAge();
+
+
+
+    function getAgeSame(){
+        for(let i = 0; i <students.length; i++){
+          for(let j = 0; j <students.length; j++){
+            if(students[i] !== students[j]){
+            if(students[i].age === students[j].age){
+                var ageSame = [];
+                ageSame.push(students[i].name ,students[i].age,  students[j].name, students[j].age,);
+            }
+          }else{
+            continue;
+          }
+          }
+          console.log(ageSame);
+       }
+    }
+    getAgeSame();
+   
     </script>
-</body>
+  </body>
 </html>

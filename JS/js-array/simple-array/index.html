@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let itCompanies =['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon',];
+    // Array - г өгүүлбэр болгон хэвлэ: Facebook, Google, Microsoft, Apple, IBM, Oracle, Amazon зэрэг мэдээллийн технологийн томоохон компаниуд.
+    console.log(`${itCompanies} зэрэг мэдээллийн технологийн томоохон компаниуд`);
+        //console.log() ашиглан array хэвлэх
+        console.log(itCompanies);
+        //Array дахь компаниудын length хэвлэх
+        console.log(itCompanies.length);
+        //Эхний компани, дунд болон сүүлчийн компанийг хэвлэх
+        console.log(`hamgiin ehnii company: ${itCompanies[0]}`);
+        console.log(`dundah company: ${itCompanies[itCompanies.length - Math.round(itCompanies.length / 2)]}`);
+        console.log(`suulchiin company: ${itCompanies[itCompanies.length -1]}`);
+    //         Компани бүрийг хэвлэх
+        for(let i =0; i<=itCompanies.length; i++){
+            console.log(itCompanies[i]);
+        }
+    // Компанийн нэр тус бүрийг нэг нэгээр нь том үсгээр сольж хэвлэж гарга
+        for(let i =0; i<=itCompanies.length; i++){
+            console.log(itCompanies[i].toUpperCase());
+        }
+    </script>
+</body>
+</html>
